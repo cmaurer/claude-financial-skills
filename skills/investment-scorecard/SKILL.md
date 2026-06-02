@@ -7,6 +7,7 @@ description: >
   supporting rationale. Trigger when the user asks "should I buy [ticker]",
   "score [investment]", "is [ticker] worth adding", or wants a structured
   framework for evaluating a new position.
+  reference: https://investimate.substack.com/p/my-complete-stock-analysis-framework
 ---
 
 # Investment Scorecard Skill
