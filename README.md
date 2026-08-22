@@ -39,6 +39,7 @@ make clean
 | `equity-analysis` | Fundamental equity research with institutional-grade formatting |
 | `investment-scorecard` | Structured scoring framework for investment decisions |
 | `market-regime` | Identify current market regime and adjust positioning |
+| `market-breadt` | |
 
 ## Claude Desktop (MCP)
 
