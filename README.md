@@ -48,6 +48,10 @@ Some skills also ship an MCP server so the same functionality is available in Cl
 |-------|-----------|-----------|
 | `epoch-converter` | `scripts/epoch_mcp_server.py` | `uvx --from fastmcp-slim[server] fastmcp run <path>` |
 
+## Releases
+
+Every push to `main` runs [`semantic-release`](https://semantic-release.gitbook.io/) via `.github/workflows/release.yml`, which cuts a new git tag and GitHub Release automatically based on commit messages since the last release — no manual version bumping. Use [Conventional Commits](https://www.conventionalcommits.org/) prefixes to control the version bump: `fix:` → patch, `feat:` → minor, a `BREAKING CHANGE:` footer → major. Commits that don't match a releasable type (e.g. `docs:`, `chore:`) don't trigger a release.
+
 ## Adding a skill
 
 1. Create `skills/<your-skill>/SKILL.md` with the required frontmatter (`name`, `description`).
