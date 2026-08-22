@@ -39,6 +39,7 @@ make clean
 | `equity-analysis` | Fundamental equity research with institutional-grade formatting |
 | `investment-scorecard` | Structured scoring framework for investment decisions |
 | `market-regime` | Identify current market regime and adjust positioning |
+| `market-breadt` | |
 
 ## Claude Desktop (MCP)
 
@@ -47,6 +48,10 @@ Some skills also ship an MCP server so the same functionality is available in Cl
 | Skill | MCP server | Transport |
 |-------|-----------|-----------|
 | `epoch-converter` | `scripts/epoch_mcp_server.py` | `uvx --from fastmcp-slim[server] fastmcp run <path>` |
+
+## Releases
+
+Every push to `main` runs [`semantic-release`](https://semantic-release.gitbook.io/) via `.github/workflows/release.yml`, which cuts a new git tag and GitHub Release automatically based on commit messages since the last release — no manual version bumping. Use [Conventional Commits](https://www.conventionalcommits.org/) prefixes to control the version bump: `fix:` → patch, `feat:` → minor, a `BREAKING CHANGE:` footer → major. Commits that don't match a releasable type (e.g. `docs:`, `chore:`) don't trigger a release.
 
 ## Adding a skill
 
